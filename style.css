@@ -1,0 +1,143 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  height: auto;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  background-color: #253783;
+  margin: 0px auto;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  height: 150px;
+  align-items: center;
+  background-image: url(./images/clouds-128082585-e371ed6111184c6fa8cfa77313bc18e3.jpg);
+  background-size: cover;
+  color: white;
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.652);
+}
+.input {
+  margin-left: 20px;
+}
+.input input {
+  width: 200px;
+  height: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.466);
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.611);
+  padding-left: 5px;
+}
+.input button {
+  width: 25px;
+  height: 25px;
+  background-color: rgba(255, 255, 255, 0.611);
+  border: 1px solid transparent;
+  border-radius: 100%;
+  cursor: pointer;
+}
+.date_time {
+  margin-right: 20px;
+  text-align: right;
+}
+.date_time h2 {
+  margin-bottom: 0px;
+}
+.date_time h3 {
+  margin-top: 10px;
+}
+.weather_container {
+  display: flex;
+  gap: 20px;
+  overflow-y: scroll;
+  padding: 0px 20px;
+}
+.weather {
+  border: 1px solid black;
+  width: 220px;
+  min-width: 220px;
+  height: 250px;
+  position: relative;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.611);
+  border-radius: 10px;
+}
+.weather_info {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 0px;
+  justify-content: center;
+}
+.weather_info h2 {
+  margin: 0px;
+}
+.date {
+  margin: 0px;
+  margin-top: 10px;
+}
+.charts {
+  display: flex;
+  justify-content: space-evenly;
+}
+canvas {
+  width: 700px !important;
+  height: 380px !important;
+  background-color: rgba(255, 255, 255, 0.611);
+  border-radius: 10px;
+}
+footer {
+  background-color: rgba(255, 255, 255, 0.611);
+  color: black;
+  height: 90px;
+  margin: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 10px;
+}
+
+footer .logos ul {
+  font-size: 20px;
+  display: flex;
+  align-self: center;
+  gap: 10px;
+  padding: 0px;
+}
+
+footer .logo a {
+  text-decoration: none;
+  color: black;
+}
+
+footer p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 1400px) {
+  .charts {
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media (max-width: 720px) {
+  canvas {
+    width: 400px !important;
+    height: 300px !important;
+  }
+}
+@media (max-width: 425px) {
+  canvas {
+    width: 300px !important;
+    height: 225px !important;
+  }
+}
